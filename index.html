@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Seat Booking</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- Main div start -->
+    <div id="mainDiv">
+      <!-- Pick movie start -->
+      <div id="pickMovie">
+        <label for="movieSelect">Pick a movie:</label>
+        <select name="movies" id="movieSelect">
+          <option value="10">Avengers: End Game (10$)</option>
+          <option value="13">Spider-Man: No Way Home (13$)</option>
+          <option value="15">Avatar: The Way of Water (15$)</option>
+          <option value="11">Joker (11$)</option>
+        </select>
+      </div>
+      <!-- Pick movie end -->
+
+      <!-- Seats info start -->
+      <div id="seatInfo">
+        <ul class="seatInfoList">
+          <li>
+            <div class="seat"></div>
+            <small>N/A</small>
+          </li>
+          <li>
+            <div class="seat selected"></div>
+            <small>Selected</small>
+          </li>
+          <li>
+            <div class="seat occupied"></div>
+            <small>Occupied</small>
+          </li>
+        </ul>
+      </div>
+      <!-- Seats info end -->
+
+      <!-- Screen start -->
+      <div id="screen"></div>
+      <!-- Screen end -->
+
+      <!-- Seats start -->
+      <div id="pickSeat">
+        <!-- Seat Row-1 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Seat Row-1 end -->
+
+        <!-- Seat Row-2 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Seat Row-2 end -->
+
+        <!-- Seat Row-3 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Seat Row-3 end -->
+
+        <!-- Seat Row-4 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Seat Row-4 end -->
+
+        <!-- Seat Row-5 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Seat Row-5 end -->
+
+        <!-- Seat Row-6 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+        </div>
+        <!-- Seat Row-6 end -->
+
+        <!-- Seat Row-7 start -->
+        <div class="seatRow">
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+          <div class="seat"></div>
+          <div class="seat occupied"></div>
+        </div>
+        <!-- Seat Row-7 end -->
+      </div>
+      <!-- Seats end -->
+
+      <!-- Text start -->
+      <p class="text">
+        You have selected <span id="count">0</span> seats for a price of $<span
+          id="total"
+          >0</span
+        >
+      </p>
+      <!-- Text end -->
+    </div>
+    <!-- Main div end -->
+
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
